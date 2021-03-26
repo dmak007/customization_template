@@ -1,0 +1,9 @@
+﻿<Sql TableName="MAENxPMSetup" TableSchemaXml="#CDATA">
+    <CDATA name="TableSchemaXml"><![CDATA[<table name="MAENxPMSetup">
+  <col name="IsThresholdAmtEnabled" type="Bit" default="Zero" />
+  <col name="CompanyID" type="Int" default="Zero" />
+  <index name="PK_MAENxPMSetup" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+  </index>
+</table>]]></CDATA>
+</Sql>
