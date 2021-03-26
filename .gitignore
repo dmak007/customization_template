@@ -2,3 +2,4 @@
 !template**/*
 !csMake.ps1
 !.gitignore
+!README.md
