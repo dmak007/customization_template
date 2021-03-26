@@ -73,7 +73,10 @@ function Ensure-Solution {
             "build.ps1", "build.cake", ".gitignore", ".editorconfig") | % {
         $tmp = (Get-Content "$templatePath/$_" | %{$_ -replace "#PROJECT#", $project}) 
         $tmp | Out-File -Encoding utf8 "$PROJECT_PATH/$_"
-    }   
+    }
+    
+    Copy-Item "$PROJECT_DIRECTORY/README.md" -Destination "$PROJECT_PATH"
+       
 
     # Solution File
     $slnFileContent = (Get-Content "$templatePath/WebsiteSolution.sln" | %{$_ -replace "#PROJECT#", $project}) 
