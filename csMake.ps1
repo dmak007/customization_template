@@ -69,7 +69,7 @@ function Ensure-Solution {
     
 
     # Files        
-    @("README.md", "OpenVS.bat", "Directory.Build.props",
+    @("OpenVS.bat", "Directory.Build.props",
             "build.ps1", "build.cake", ".gitignore", ".editorconfig") | % {
         $tmp = (Get-Content "$templatePath/$_" | %{$_ -replace "#PROJECT#", $project}) 
         $tmp | Out-File -Encoding utf8 "$PROJECT_PATH/$_"
