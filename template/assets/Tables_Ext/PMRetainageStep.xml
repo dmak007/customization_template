@@ -1,3 +1,0 @@
-﻿<Table TableName="PMRetainageStep">
-    <Column TableName="PMRetainageStep" ColumnName="UsrMAENThresholdAmt" ColumnType="decimal" AllowNull="True" DecimalPrecision="2" DecimalLength="38" IsNewColumn="True" IsUnicode="True" />
-</Table>
